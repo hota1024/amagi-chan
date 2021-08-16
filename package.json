@@ -60,6 +60,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "dxn": "^0.0.9",
+    "keyv": "^4.0.3",
     "rcon-client": "^4.2.3"
   }
 }
