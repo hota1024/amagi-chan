@@ -170,6 +170,21 @@ const main = async () => {
       `サーバーに参加する際は下記コマンドを実行してください。(例: \`${app.prefixes[0]}join hota1024\`)`,
       `\`${app.prefixes[0]}join マイクラのユーザー名\``
     )
+    embed.addField(
+      `\`${app.prefixes[0]}list\``,
+      '**サーバーに参加しているユーザーの詳細情報を表示するよ。**',
+      true
+    )
+    embed.addField(
+      `\`${app.prefixes[0]}profile\``,
+      '**自分の詳細情報を表示するよ。**',
+      true
+    )
+    embed.addField(
+      `\`${app.prefixes[0]}profile {username: string}\``,
+      '**マイクラのユーザーの詳細情報を表示するよ。**',
+      true
+    )
 
     message.reply(embed)
   })
