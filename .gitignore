@@ -6,6 +6,7 @@ dist/
 # OS
 .DS_Store
 .env
+db/
 
 # Debug
 npm-debug.log
