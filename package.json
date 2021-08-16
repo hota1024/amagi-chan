@@ -58,6 +58,7 @@
     }
   },
   "dependencies": {
+    "@types/keyv": "^3.1.2",
     "dotenv": "^10.0.0",
     "dxn": "^0.0.9",
     "keyv": "^4.0.3",
