@@ -69,10 +69,12 @@ const main = async () => {
 
   const removeWhitelist = async (username: string) => {
     await rcon.send(`/whitelist remove ${username}`)
+    await rcon.send('/whitelist reload')
   }
 
   const addWhitelist = async (username: string): Promise<boolean> => {
     const res = await rcon.send(`/whitelist add ${username}`)
+    await rcon.send('/whitelist reload')
 
     return !res.includes('does not exist')
   }
